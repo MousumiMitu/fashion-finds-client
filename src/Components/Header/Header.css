@@ -1,0 +1,15 @@
+.nav-container {
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid red;
+}
+.nav-lists {
+  position: absolute;
+  right: 0;
+}
+.nav-lists li {
+  margin: auto 0;
+  margin-right: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}

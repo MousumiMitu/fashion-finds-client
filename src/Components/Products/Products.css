@@ -1,0 +1,8 @@
+.card-section {
+  width: 85%;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+.card-section img {
+  width: 100%;
+}
