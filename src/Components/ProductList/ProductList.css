@@ -1,0 +1,19 @@
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+td {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.changing-btn {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+}

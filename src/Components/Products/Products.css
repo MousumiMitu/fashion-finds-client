@@ -1,8 +1,22 @@
 .card-section {
   width: 85%;
   margin: 30px auto;
-  border: 1px solid red;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 10px;
 }
-.card-section img {
+.product-img {
+  width: 80%;
+  margin: 0 auto;
+}
+.product-img img {
   width: 100%;
+}
+.primary-btn {
+  outline: none;
+  border: none;
+  margin: 20px 0;
+  padding: 5px 15px;
+  background: linear-gradient(to bottom, rgb(231, 68, 182), rgb(173, 18, 235));
+  color: white;
+  border-radius: 20px;
 }

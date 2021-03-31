@@ -1,0 +1,14 @@
+.admin-container {
+  width: 20%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(77, 3, 77);
+}
+.product-management {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}

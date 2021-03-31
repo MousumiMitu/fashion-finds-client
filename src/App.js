@@ -4,6 +4,8 @@ import Home from "./Components/Home/Home";
 import Admin from "./Components/Admin/Admin";
 import Header from "./Components/Header/Header";
 import NoMatch from "./Components/NoMatch/NoMatch";
+import AddProducts from "./Components/AddProducts/AddProducts";
+import ManageProducts from "./Components/ManageProducts/ManageProducts";
 
 function App() {
   return (
@@ -15,6 +17,12 @@ function App() {
           </Route>
           <Route path="/admin">
             <Admin />
+          </Route>
+          <Route path="/addProducts">
+            <AddProducts />
+          </Route>
+          <Route path="/manageProducts">
+            <ManageProducts />
           </Route>
           <Route exact path="/">
             <Home />
