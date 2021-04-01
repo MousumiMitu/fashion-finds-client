@@ -19,7 +19,7 @@ const ManageProducts = () => {
       <div className="managing-section">
         <h3>Product Lists</h3>
         {products.map((product) => (
-          <ProductList product={product}></ProductList>
+          <ProductList product={product} key={product._id}></ProductList>
         ))}
       </div>
     </div>

@@ -20,18 +20,20 @@ const ProductList = (props) => {
   return (
     <div>
       <table>
-        <tr className="lists-item">
-          <td>Name: {name}</td>
-          <td>Price: {price}</td>
-          <td>
-            <button
-              onClick={() => handleDeleteProduct(_id)}
-              className="changing-btn"
-            >
-              <FontAwesomeIcon icon={faTrashAlt} />
-            </button>
-          </td>
-        </tr>
+        <tbody>
+          <tr className="lists-item">
+            <td>Name: {name}</td>
+            <td>Price: {price}</td>
+            <td>
+              <button
+                onClick={() => handleDeleteProduct(_id)}
+                className="changing-btn"
+              >
+                <FontAwesomeIcon icon={faTrashAlt} />
+              </button>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );
