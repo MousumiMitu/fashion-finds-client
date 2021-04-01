@@ -6,13 +6,35 @@ import "./ProductCheckout.css";
 
 const ProductCheckout = () => {
   let { productId } = useParams();
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [product, setProduct] = useState({});
+  const { name, price } = product;
 
   useEffect(() => {
     fetch("https://enigmatic-river-27840.herokuapp.com/product/" + productId)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [productId]);
+
+  const handleCheckOut = () => {
+    const newOrder = {
+      ...loggedInUser,
+      name,
+      price,
+      orderTime: new Date().toDateString("dd,mm,yyyy,g:i A TT"),
+    };
+    fetch("https://enigmatic-river-27840.herokuapp.com/addOrder", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newOrder),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
 
   return (
     <div className="main-container">
@@ -27,18 +49,20 @@ const ProductCheckout = () => {
               <td>Price</td>
             </tr>
             <tr style={{ fontWeight: "bold" }}>
-              <td>{product.name}</td>
+              <td>{name}</td>
               <td className="ps-4">1</td>
-              <td>${product.price}</td>
+              <td>${price}</td>
             </tr>
             <tr style={{ fontWeight: "bold" }}>
               <td>Total</td>
               <td></td>
-              <td>${product.price}</td>
+              <td>${price}</td>
             </tr>
           </tbody>
         </table>
-        <button className="checkout-btn">checkout</button>
+        <button onClick={handleCheckOut} className="checkout-btn">
+          checkout
+        </button>
       </div>
     </div>
   );
