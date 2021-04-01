@@ -6,7 +6,7 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 const ProductList = (props) => {
   const { name, price, imageURL, _id } = props.product;
   const handleDeleteProduct = (id) => {
-    fetch(`/delete/${id}`, {
+    fetch(`https://enigmatic-river-27840.herokuapp.com/delete/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json; charset=UTF-8",

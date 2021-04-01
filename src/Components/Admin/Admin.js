@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Admin.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThLarge, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Admin = () => {
   return (
@@ -11,10 +13,17 @@ const Admin = () => {
         </Link>
       </h3>
       <div className="product-management">
-        <Link to="manageProducts" style={{ textDecoration: "none" }}>
-          Manage products
+        <Link
+          to="manageProducts"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <FontAwesomeIcon className="me-1" icon={faThLarge} /> Manage products
         </Link>
-        <Link to="addProducts" style={{ textDecoration: "none" }}>
+        <Link
+          to="addProducts"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          <FontAwesomeIcon className="me-2" icon={faPlus} />
           Add product
         </Link>
       </div>
