@@ -31,7 +31,7 @@ const Header = () => {
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/home" style={{ textDecoration: "none" }}>
+                <Link to="/orders" style={{ textDecoration: "none" }}>
                   Orders
                 </Link>
               </li>
