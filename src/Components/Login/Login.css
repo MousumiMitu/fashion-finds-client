@@ -1,0 +1,46 @@
+.login-section {
+  width: 40%;
+  margin: 5rem auto;
+}
+.login-input {
+  outline: none;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-bottom: 1px solid purple;
+  padding: 0.5rem 1.5rem;
+}
+.form-section {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 2px solid purple;
+}
+.icon-style {
+  position: absolute;
+  margin-top: 0.8rem;
+  color: purple;
+}
+.login-btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 7px;
+  color: white;
+  background-color: purple;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+}
+.google-sign-btn {
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px gray;
+}
+.google-sign-btn img {
+  width: 12%;
+  margin-right: 2rem;
+}

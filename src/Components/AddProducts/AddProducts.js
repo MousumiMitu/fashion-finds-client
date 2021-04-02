@@ -46,14 +46,27 @@ const AddProducts = () => {
       <Admin />
       <div className=" product-container">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <input name="name" defaultValue="new product name" ref={register} />
-          <input name="price" defaultValue="product price" ref={register} />
+          <label htmlFor="name" className="pb-2">
+            Product name
+          </label>
+          <label htmlFor="price" className="margin">
+            Add price
+          </label>
+          <br />
+          <input
+            name="name"
+            // defaultValue="new product name"
+
+            ref={register}
+          />
+
+          <input name="price" ref={register} />
           <br />
           <input name="image" type="file" onChange={handleImageUpload} />
 
           {errors.exampleRequired && <span>This field is required</span>}
-
-          <input type="submit" />
+          <br />
+          <input className="submit-btn" type="submit" />
         </form>
       </div>
     </div>
