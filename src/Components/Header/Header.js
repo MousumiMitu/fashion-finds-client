@@ -9,7 +9,16 @@ const Header = () => {
     <div>
       <nav class="navbar navbar-expand-lg navbar-light nav-container ">
         <div class="container-fluid nav-width">
-          <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
+          <Link
+            to="/home"
+            style={{
+              textDecoration: "none",
+              color: "#800060",
+              textShadow: "2px 2px 5px white",
+              fontWeight: "bold",
+              fontSize: "1.2rem",
+            }}
+          >
             Fashion Finds
           </Link>
           <button

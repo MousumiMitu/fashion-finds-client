@@ -9,7 +9,7 @@ const Admin = () => {
     <div className="admin-container ">
       <h3 className="pt-4 text-center">
         <Link to="home" style={{ textDecoration: "none", color: "white" }}>
-          Fashion find
+          Fashion finds
         </Link>
       </h3>
       <div className="product-management">

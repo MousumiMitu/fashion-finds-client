@@ -32,7 +32,7 @@ const ProductCheckout = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        alert("your order added to the card");
       });
   };
 
