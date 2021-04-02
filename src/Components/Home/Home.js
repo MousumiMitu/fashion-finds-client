@@ -15,13 +15,18 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="main-container">
+    <div className="background-container">
       <Header />
-      <div className="row">
-        {products.map((product) => (
-          <Products product={product} key={product._id}></Products>
-        ))}
+      <div className="main-container">
+        <div className="row">
+          {products.map((product) => (
+            <Products product={product} key={product._id}></Products>
+          ))}
+        </div>
       </div>
+      {/* <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div> */}
     </div>
   );
 };

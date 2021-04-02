@@ -42,7 +42,7 @@ const AddProducts = () => {
       });
   };
   return (
-    <div className="d-flex ">
+    <div className="admin-panel">
       <Admin />
       <div className=" product-container">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -53,12 +53,7 @@ const AddProducts = () => {
             Add price
           </label>
           <br />
-          <input
-            name="name"
-            // defaultValue="new product name"
-
-            ref={register}
-          />
+          <input name="name" ref={register} />
 
           <input name="price" ref={register} />
           <br />

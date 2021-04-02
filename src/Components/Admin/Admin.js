@@ -8,13 +8,14 @@ const Admin = () => {
   return (
     <div className="admin-container ">
       <h3 className="pt-4 text-center">
-        <Link to="home" style={{ textDecoration: "none" }}>
-          E-commerce
+        <Link to="home" style={{ textDecoration: "none", color: "white" }}>
+          Fashion find
         </Link>
       </h3>
       <div className="product-management">
         <Link
           to="manageProducts"
+          className="mb-3"
           style={{ textDecoration: "none", color: "white" }}
         >
           <FontAwesomeIcon className="me-1" icon={faThLarge} /> Manage products

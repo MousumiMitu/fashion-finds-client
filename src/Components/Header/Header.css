@@ -1,7 +1,14 @@
 .nav-container {
   width: 100%;
-  margin: 10px auto;
-  border: 1px solid red;
+  margin: 0auto;
+  padding: 1rem 0;
+
+  background-color: rgba(226, 206, 245, 0.863);
+}
+.nav-width {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
 }
 .nav-lists {
   position: absolute;
@@ -12,4 +19,18 @@
   margin-right: 20px;
   font-size: 1.1rem;
   font-weight: bold;
+}
+.user-btn {
+  outline: none;
+  border: none;
+  margin: 20px 0;
+  padding: 5px 15px;
+  background: linear-gradient(to bottom, #db64eb, #c205c8);
+  color: white;
+  border-radius: 10px;
+}
+@media (max-width: 598px) {
+  .nav-lists {
+    position: relative;
+  }
 }

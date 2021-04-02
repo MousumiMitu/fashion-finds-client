@@ -1,6 +1,9 @@
+.admin-panel {
+  display: flex;
+}
 .product-container {
   margin: 0 100px;
-  margin-top: 180px;
+  margin-top: 5rem;
 }
 input {
   width: 20rem;
@@ -20,7 +23,22 @@ input {
   margin-left: 35rem;
   color: white;
   border: none;
-  background-color: rgb(147, 9, 211);
+  background: linear-gradient(to bottom, #db64eb, #c205c8);
   border-radius: 10px;
   padding: 8px 0;
+}
+@media (max-width: 598px) {
+  .submit-btn {
+    margin-left: 0.7rem;
+  }
+  .product-container {
+    margin: 0 20px;
+    margin-top: 5rem;
+  }
+  .margin {
+    margin-left: 0;
+    position: relative;
+    left: -6rem;
+    top: 4.8rem;
+  }
 }

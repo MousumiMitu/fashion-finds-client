@@ -14,7 +14,7 @@ const ManageProducts = () => {
   }, []);
 
   return (
-    <div className="d-flex">
+    <div className="admin-panel">
       <Admin />
       <div className="managing-section">
         <h3>Product Lists</h3>

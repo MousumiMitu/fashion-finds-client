@@ -37,32 +37,34 @@ const ProductCheckout = () => {
   };
 
   return (
-    <div className="main-container">
+    <div>
       <Header></Header>
-      <div className="table-area">
-        <h2 className="mb-4 ms-5">Checkout</h2>
-        <table className="table-box">
-          <tbody>
-            <tr style={{ color: "#a6a6a6" }}>
-              <td>Description</td>
-              <td>Quantity</td>
-              <td>Price</td>
-            </tr>
-            <tr style={{ fontWeight: "bold" }}>
-              <td>{name}</td>
-              <td className="ps-4">1</td>
-              <td>${price}</td>
-            </tr>
-            <tr style={{ fontWeight: "bold" }}>
-              <td>Total</td>
-              <td></td>
-              <td>${price}</td>
-            </tr>
-          </tbody>
-        </table>
-        <button onClick={handleCheckOut} className="checkout-btn">
-          checkout
-        </button>
+      <div className="main-container">
+        <div className="table-area">
+          <h2 className="mb-4 ms-5">Checkout</h2>
+          <table className="table-box">
+            <tbody>
+              <tr style={{ color: "#a6a6a6" }}>
+                <td>Description</td>
+                <td>Quantity</td>
+                <td>Price</td>
+              </tr>
+              <tr style={{ fontWeight: "bold" }}>
+                <td>{name}</td>
+                <td className="ps-4">1</td>
+                <td>${price}</td>
+              </tr>
+              <tr style={{ fontWeight: "bold" }}>
+                <td>Total</td>
+                <td></td>
+                <td>${price}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button onClick={handleCheckOut} className="checkout-btn">
+            checkout
+          </button>
+        </div>
       </div>
     </div>
   );

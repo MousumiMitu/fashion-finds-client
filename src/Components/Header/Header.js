@@ -8,12 +8,13 @@ const Header = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light nav-container ">
-        <div class="container-fluid">
-          <Link to="/home" style={{ textDecoration: "none" }}>
-            website
+        <div class="container-fluid nav-width">
+          <Link to="/home" style={{ textDecoration: "none", color: "white" }}>
+            Fashion Finds
           </Link>
           <button
             class="navbar-toggler"
+            style={{ background: "white" }}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -26,28 +27,59 @@ const Header = () => {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav nav-lists">
               <li class="nav-item">
-                <Link to="/home" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/home"
+                  style={{
+                    textDecoration: "none",
+                    color: "#800060",
+                    textShadow: "2px 2px 5px white",
+                  }}
+                >
                   Home
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/orders" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/orders"
+                  style={{
+                    textDecoration: "none",
+                    color: "#800060",
+                    textShadow: "2px 2px 5px white",
+                  }}
+                >
                   Orders
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/admin" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/admin"
+                  style={{
+                    textDecoration: "none",
+                    color: "#800060",
+                    textShadow: "2px 2px 5px white",
+                  }}
+                >
                   Admin
                 </Link>
               </li>
               <li class="nav-item">
-                <Link to="/home" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/home"
+                  style={{
+                    textDecoration: "none",
+                    color: "#800060",
+                    textShadow: "2px 2px 5px white",
+                  }}
+                >
                   Deals
                 </Link>
               </li>
               <div>
-                <button>
-                  <Link to="/login" style={{ textDecoration: "none" }}>
+                <button className="user-btn">
+                  <Link
+                    to="/login"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     {loggedInUser.name ? loggedInUser.name : "Login"}
                   </Link>
                 </button>

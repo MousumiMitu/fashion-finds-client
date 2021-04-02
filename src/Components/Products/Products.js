@@ -17,8 +17,8 @@ const Products = (props) => {
           <img src={imageURL} alt="" />
         </div>
         <div className="text-center">
-          <h4 style={{ color: "#800033" }}>{name}</h4>
-          <h5 style={{ color: "#330014" }}>${price}</h5>
+          <h5 style={{ color: "#800060" }}>{name}</h5>
+          <h6 style={{ color: "#330014" }}>${price}</h6>
           <button onClick={() => handleClickBuy(_id)} className="primary-btn">
             Buy now
           </button>

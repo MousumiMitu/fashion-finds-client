@@ -1,11 +1,12 @@
 .card-section {
-  width: 85%;
+  width: 82%;
   margin: 30px auto;
-  box-shadow: 2px 2px 5px gray;
+  box-shadow: 2px 2px 5px rgb(243, 104, 201);
   border-radius: 10px;
+  background-color: white;
 }
 .product-img {
-  width: 80%;
+  width: 76%;
   margin: 0 auto;
 }
 .product-img img {
@@ -15,8 +16,8 @@
   outline: none;
   border: none;
   margin: 20px 0;
-  padding: 5px 15px;
-  background: linear-gradient(to bottom, rgb(231, 68, 182), rgb(173, 18, 235));
+  padding: 8px 18px;
+  background: linear-gradient(to bottom, #db64eb, #c205c8);
   color: white;
-  border-radius: 20px;
+  border-radius: 15px;
 }
