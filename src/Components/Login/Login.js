@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPen } from "@fortawesome/free-solid-svg-icons";
 import icon from "../../images/logo.png";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -41,30 +42,44 @@ const Login = () => {
       });
   };
   return (
-    <div className="login-section text-center">
-      <h4 className="text-center mb-3" style={{ color: "purple" }}>
-        Login form
-      </h4>
-      <div className="form-section">
-        <form action="">
-          <FontAwesomeIcon className="icon-style" icon={faEnvelope} />
-          <input className="login-input" type="text" placeholder="email" />
-          <br />
-          <FontAwesomeIcon className="icon-style" icon={faPen} />
-          <input
-            className="login-input"
-            type="password"
-            placeholder="password"
-          />
-          <br />
-          <button className="login-btn">Login</button>
-        </form>
+    <div>
+      <Link
+        to="/home"
+        className="logo-area"
+        style={{
+          textDecoration: "none",
+          color: "purple",
+          fontWeight: "bold",
+          fontSize: "1.5rem",
+        }}
+      >
+        Fashion Finds
+      </Link>
+      <div className="login-section text-center">
+        <h4 className="text-center mb-3" style={{ color: "purple" }}>
+          Login form
+        </h4>
+        <div className="form-section">
+          <form action="">
+            <FontAwesomeIcon className="icon-style" icon={faEnvelope} />
+            <input className="login-input" type="text" placeholder="email" />
+            <br />
+            <FontAwesomeIcon className="icon-style" icon={faPen} />
+            <input
+              className="login-input"
+              type="password"
+              placeholder="password"
+            />
+            <br />
+            <button className="login-btn">Login</button>
+          </form>
+        </div>
+        <p className="text-center fst-italic fs-5">or</p>
+        <button className="google-sign-btn " onClick={handleGoogleSignIn}>
+          <img src={icon} alt="" />
+          continue with google
+        </button>
       </div>
-      <p className="text-center fst-italic fs-5">or</p>
-      <button className="google-sign-btn " onClick={handleGoogleSignIn}>
-        <img src={icon} alt="" />
-        continue with google
-      </button>
     </div>
   );
 };

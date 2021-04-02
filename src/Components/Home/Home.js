@@ -19,14 +19,19 @@ const Home = () => {
       <Header />
       <div className="main-container">
         <div className="row">
-          {products.map((product) => (
-            <Products product={product} key={product._id}></Products>
-          ))}
+          {products == "" ? (
+            <div class="d-flex justify-content-center">
+              <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          ) : (
+            products.map((product) => (
+              <Products product={product} key={product._id}></Products>
+            ))
+          )}
         </div>
       </div>
-      {/* <div class="spinner-border text-warning" role="status">
-        <span class="visually-hidden">Loading...</span>
-      </div> */}
     </div>
   );
 };

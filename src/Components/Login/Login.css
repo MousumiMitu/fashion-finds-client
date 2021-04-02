@@ -44,3 +44,17 @@
   width: 12%;
   margin-right: 2rem;
 }
+.logo-area {
+  position: relative;
+  top: 2rem;
+  left: 10rem;
+  font: bold;
+}
+@media (max-width: 598px) {
+  .login-section {
+    width: 85%;
+  }
+  .logo-area {
+    left: 4rem;
+  }
+}
